@@ -1,4 +1,0 @@
-- Auth
-- Liste
-- Upload
-- Notification
