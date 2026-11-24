@@ -39,3 +39,25 @@ const app = createApp(App).use(IonicVue).use(router);
 router.isReady().then(() => {
   app.mount('#app');
 });
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCrOwM1vmh2J19WA-BHJab0T03dUFSPvCQ",
+  authDomain: "colis-fa1f9.firebaseapp.com",
+  projectId: "colis-fa1f9",
+  storageBucket: "colis-fa1f9.firebasestorage.app",
+  messagingSenderId: "705327896250",
+  appId: "1:705327896250:web:58537b31fcfb9e63699483",
+  measurementId: "G-GLS3Q0G0Q9"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
